@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleto de Cine</title>
+    <link rel="stylesheet" href="style4.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Generar un número aleatorio de 4 dígitos
+            var numeroConfirmacion = Math.floor(1000 + Math.random() * 9000);
+
+            // Actualizar el contenido de la celda con el número generado
+            document.getElementById('numero-confirmacion').innerText = numeroConfirmacion;
+        });
+    </script>
+</head>
+<body>
+
+<div class="ticket-container">
+    <h1>Tiket de entrada  <br></b> Cinema Club</h1>
+    <table>
+        <tr>
+            <th>Número de Confirmación</th>
+            <td id="numero-confirmacion"></td>
+        </tr>
+        <tr>
+            <th>Cine</th>
+            <td>Cinema Club 🎬</td>
+        </tr>
+        
+        <tr>
+            <td colspan="2"><img src="qr.png" alt="Código de barras" style="max-width: 100%; height: auto;"></td>
+        </tr>
+    </table>
+</div>
+
+
+</body>
+</html>
